@@ -44,5 +44,23 @@ Open your terminal or command prompt and run:
 ```bash
 git clone https://github.com/Deepak-Gangwani/Post-Office-App
 
+cd Post-Office-App/server
+
+npm install
+
+## Create database pincode_db
+CREATE TABLE favorites (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    branch_type VARCHAR(255),
+    delivery_status VARCHAR(255),
+    district VARCHAR(255),
+    region VARCHAR(255),
+    state VARCHAR(255)
+);
+
+node index.js
+
+
 Contribution
 If you'd like to contribute to this project, please fork the repository and create a pull request.
