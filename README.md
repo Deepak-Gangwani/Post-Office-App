@@ -42,6 +42,8 @@ Before running the project, ensure you have the following installed:
 Open your terminal or command prompt and run:
 
 ```bash
+API used :-http://www.postalpincode.in/Api-Details
+
 git clone https://github.com/Deepak-Gangwani/Post-Office-App
 
 cd Post-Office-App/server
