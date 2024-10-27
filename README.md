@@ -48,7 +48,9 @@ git clone https://github.com/Deepak-Gangwani/Post-Office-App
 
 cd Post-Office-App/server
 
-npm install
+npm init -y
+
+npm install express mysql2 axios body-parser cors bootstrap
 
 ## Create database pincode_db
 CREATE TABLE favorites (
