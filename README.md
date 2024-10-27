@@ -52,6 +52,8 @@ npm init -y
 
 npm install express mysql2 axios body-parser cors bootstrap
 
+curl -o public/css/bootstrap.min.css https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css
+
 ## Create database pincode_db
 CREATE TABLE favorites (
     id INT AUTO_INCREMENT PRIMARY KEY,
