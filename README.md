@@ -17,73 +17,33 @@ Post-Office-App/
 │   ├── package-lock.json
 │   └── index.js
 
-Steps to Run the Post Office App Project
-Prerequisites
-Before running the project, make sure you have the following installed:
+# Post Office App
 
-Node.js: You can download and install it from Node.js official website.
-MySQL (XAMPP): Download and install XAMPP from XAMPP official website.
-Step 1: Clone the Repository
-You can clone the repository using Git. Open your terminal or command prompt and run:
+## 📌 Overview
 
-bash
-Copy code
-git clone <repository-url>
-Replace <repository-url> with the URL of your GitHub repository.
+The **Post Office App** allows users to search for Indian post/pin code locations using either the code or the name. The application enables users to mark their favorite locations for quick access.
 
-Step 2: Navigate to the Project Directory
-Change into the project directory:
+## ⚙️ Technologies Used
 
-bash
-Copy code
-cd Post-Office-App/server
-Step 3: Install Dependencies
-Before running the app, you need to install the necessary dependencies listed in package.json. Run the following command:
+- **Node.js**: Backend runtime environment
+- **MySQL (XAMPP)**: Database management system
+- **Bootstrap 5**: UI framework for responsive design
 
-bash
-Copy code
-npm install
-This command will create a node_modules folder and install all required packages.
+## 📋 Prerequisites
 
-Step 4: Set Up the Database
-Open XAMPP Control Panel: Launch XAMPP and start the MySQL service.
+Before running the project, ensure you have the following installed:
 
-Create a Database:
+- [Node.js](https://nodejs.org/) - Download and install the latest version.
+- [XAMPP](https://www.apachefriends.org/index.html) - Download and install XAMPP for MySQL.
 
-Open phpMyAdmin by navigating to http://localhost/phpmyadmin in your web browser.
-Click on Databases and create a new database, e.g., post_office_db.
-Create a Table: Use the following SQL query to create a table for storing favorite pincode locations:
+## 🛠️ Setup Instructions
 
-sql
-Copy code
-CREATE TABLE favorites (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    branch_type VARCHAR(255),
-    delivery_status VARCHAR(255),
-    district VARCHAR(255),
-    region VARCHAR(255),
-    state VARCHAR(255)
-);
-Step 5: Run the Application
-After setting up the database, you can start the Node.js application by running:
+### Step 1: Clone the Repository
 
-bash
-Copy code
-node index.js
-By default, the server will run on http://localhost:3000.
+Open your terminal or command prompt and run:
 
-Step 6: Access the Application
-Open your web browser and go to:
+```bash
+git clone https://github.com/Deepak-Gangwani/Post-Office-App
 
-Search Page: http://localhost:3000
-Favorites Page: http://localhost:3000/favourites
-You should now be able to use the Post Office App to search for pincode locations and view saved favorites.
-
-Troubleshooting
-If you encounter issues, make sure that:
-
-XAMPP is running and the MySQL service is started.
-The database is set up correctly.
 Contribution
 If you'd like to contribute to this project, please fork the repository and create a pull request.
