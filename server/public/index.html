@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pincode Search</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h1 class="text-center">Post Office App</h1>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container mt-5">
+            <h2>Search Pincode Location</h2>
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="searchType">Search By:</label>
+                    <select id="searchType" class="form-control">
+                        <option value="pincode">Pincode</option>
+                        <option value="postoffice">Name</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="searchValue" class="form-control" placeholder="Enter Pincode or Name"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Search</button>
+            </form>
+            <div id="resultsTable" class="mt-4"></div>
+            <a href="/favourites" class="btn btn-link mt-4">View Favorites</a>
+        </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>
