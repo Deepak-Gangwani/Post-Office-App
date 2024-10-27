@@ -1,6 +1,5 @@
 # Post-Office-App
 
-##Complete File Structure
 Post-Office-App/
 ├── server/
 │   ├── node_modules/
